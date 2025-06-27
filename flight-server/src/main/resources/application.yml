@@ -7,8 +7,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/db_flight
-    username: postgres
-    password: sql290924
+    username: your_username
+    password: your_password
 
   jpa:
     hibernate:
