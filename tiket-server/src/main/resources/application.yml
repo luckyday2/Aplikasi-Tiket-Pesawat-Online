@@ -1,0 +1,14 @@
+server:
+  port: 94
+
+spring:
+  application:
+    name: tiket-service
+  data:
+    mongodb:
+      uri: mongodb+srv://luckysandria02:fti290924@clusterws.frkzimp.mongodb.net/db_tiket
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:90/eureka

@@ -1,0 +1,32 @@
+server:
+  port: 91
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/users/**
+        - id: flight-service
+          uri: lb://flight-service
+          predicates:
+            - Path=/flights/**
+        - id: tiket-service
+          uri: lb://tiket-service
+          predicates:
+            - Path=/tiket/**
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:90/eureka
