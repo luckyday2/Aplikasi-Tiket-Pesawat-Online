@@ -6,7 +6,7 @@ spring:
     name: tiket-service
   data:
     mongodb:
-      uri: mongodb+srv://luckysandria02:fti290924@clusterws.frkzimp.mongodb.net/db_tiket
+      uri: your_clusters
 
 eureka:
   client:
